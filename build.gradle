@@ -1,13 +1,17 @@
 plugins {
     id 'org.quiltmc.chasm'
+    id 'eclipse'
 }
 
 group 'codes.cheater'
 version '1.0-SNAPSHOT'
 
+repositories {
+    mavenLocal()
+}
 
 dependencies {
-    implementation project(':subproject')
+    implementation "codes.cheater:example:1.1"
 }
 
 test {
